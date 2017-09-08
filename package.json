@@ -1,7 +1,7 @@
 {
-  "name": "react-generators",
+  "name": "srcg",
   "version": "0.1.0",
-  "description": "A series of simple generators so you don't have to always type class Foo extends React.Component ",
+  "description": "Naively simple (and biased) generator for React components",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,6 @@
     "minimist": "^1.2.0"
   },
   "bin": {
-    "react-component-generator": "./index.js"
+    "srcg": "./index.js"
   }
 }
