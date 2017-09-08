@@ -20,10 +20,6 @@ Either `'function'` or `'class'` (default is `'class'`).
 
 When `'function'` output is
 
-### path
-
-The output path, relative to the current working directory.
-
 ```
 $ react-component-generator --name='MyComponentsName' --type='function' --path='js/components'
 
@@ -58,6 +54,10 @@ MyComponentsName.propTypes = {
 
 export default MyComponentsName;
 ```
+
+### path
+
+The output path, relative to the current working directory.
 
 ## Why?
 
