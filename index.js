@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 const fs = require('fs');
 const Handlebars = require('handlebars');
 const minimist = require('minimist');
