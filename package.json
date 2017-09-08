@@ -1,6 +1,6 @@
 {
   "name": "react-generators",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A series of simple generators so you don't have to always type class Foo extends React.Component ",
   "main": "index.js",
   "scripts": {
