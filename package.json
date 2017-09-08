@@ -1,6 +1,6 @@
 {
   "name": "srcg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Naively simple (and biased) generator for React components",
   "main": "index.js",
   "scripts": {
