@@ -26,7 +26,7 @@ fs.readFile(path.resolve(__dirname, `templates/${type}.hbs`), 'utf-8', (err, src
 	if (err) warnAndExit(err);
 	const template = Handlebars.compile(src, {noEscape: true});
 	const result = template({name});
-	fs.writeFile(path.resolve(__dirname, outputPath), result, (err, data) => {
+	fs.writeFile(path.resolve(process.cwd(), outputPath), result, (err, data) => {
 		if (err) warnAndExit(err);
 		console.log(`Success! See ${outputPath} for results`);
 		process.exit(0);
