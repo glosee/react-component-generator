@@ -11,14 +11,20 @@ const warnAndExit = (err) => {
 
 /**
  * Required arguments:
- * --type ['class', 'function'] -- determines wether to use a class or not
- * --name -- the name of the component/class
- * -p -- the path to put the file in eg. 'webpack/components/items'
+ * --type ['class', 'function'] - determines wether to use a class or not
+ * --name - the name of the component/class
+ * --path - the path to put the file in eg. 'webpack/components/items'
  */
 const args = minimist(process.argv.splice(2));
-let {type, name, path: _path} = args;
-if (!type) type = 'class';
-if (!name) warnAndExit('must pass name');
+let {
+	connected,
+	name,
+	path: _path,
+	type = 'class'
+} = args;
+if (!name) warnAndExit('ERROR: must pass name');
+// Connected overrides 'class' or 'function', as you can't have a connected function
+if (connected) type = 'connected';
 if (!_path) _path = './';
 const outputPath = `${_path}/${name}.js`;
 
