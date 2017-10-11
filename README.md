@@ -2,10 +2,18 @@
 
 This is an extremely basic generator for React components. It currently supports generating a regular class or functional component. It was designed to take away a little bit of the boilerplate you need when making a bunch of components.
 
+## Install
+
+```
+$ npm install -g srcg
+```
+
+_Prefers global installation, but it should also work local to a project._
+
 ## Example Usage
 
 ```
-$ srcg --name='MyComponentsName' --type='function' --path='js/components'
+$ srcg --name 'MyComponentsName' --type 'function' --path 'js/components --connected'
 ```
 
 ## Options
@@ -58,6 +66,10 @@ export default MyComponentsName;
 ### path
 
 The output path, relative to the current working directory.
+
+### connected
+
+Pass this to create a class that is wrapped with `connect` and `mapStateToProps` (a la `react-redux`)
 
 ## Why?
 
