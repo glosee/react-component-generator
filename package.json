@@ -14,5 +14,9 @@
   },
   "bin": {
     "srcg": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glosee/srcg.git"
   }
 }
